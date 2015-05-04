@@ -6,7 +6,7 @@ var userSearch;
 function searchCallback(results){
     $("#results").empty();
     var userResult = results;
-    $("#results").append("<div><a href='"+userResult.html_url+"'>"+userResult+"</a></div><img src='"+userResult.avatar_url+"'/></div>");
+    $("#results").append("<div><a href='"+userResult.html_url+"'>"+userResult.login+"</a></div><img src='"+userResult.avatar_url+"'/></div><div><a href='"+userResult.repos_url+"'>Repo</a></div>");
     console.log(userResult);
 
 }
